@@ -53,7 +53,7 @@
         const ws = new WebSocket(`${protocol}://${location.host}`);
 
         ws.onmessage = function(event) {
-          const data = JSON.parse(event.data);
+          // const data = JSON.parse(event.data);
 
           rss.textContent = data.rss;
           heapTotal.textContent = data.heapTotal;
